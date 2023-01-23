@@ -23,13 +23,11 @@
           <h2>soon</h2>
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form>
-        <input type="email" placeholder=" Email Address"/>
+      <form id="form">
+        <input type="email" id="email" placeholder=" Email Address" onkeydown="validation()"/>
         <button type="submit"><img src="images/icon-arrow.svg" alt="submit email"/></button>
       </form>
-      <span class="alert">
-        <h3>Please provide a valid email</h3>
-      </span>
+      <span id="alert"></span>
     </div>
     <div class="photo">
       <picture>

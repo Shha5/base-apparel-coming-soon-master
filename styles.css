@@ -68,16 +68,16 @@ form.invalid {
 }
 
 input{
+    min-width: 90%;
+    height: 5vh; 
+    margin: 0;
+    padding: 1.2rem;
+    background-color: transparent;
+    border-radius: 25rem;
+    border: 1px solid var(--primaryColour);
     font-family: "Josefin Sans", Verdana;
     font-weight: 400;
     color: var(--neutralColor);
-    margin: 0;
-    padding: 1.2rem;
-    border-radius: 25rem;
-    border: 1px solid var(--primaryColour);
-    background-color: transparent;
-    min-width: 90%;
-    height: 5vh; 
 }
 
 input:focus{
@@ -96,17 +96,18 @@ input:invalid{
 }
 
 button{
-    background: linear-gradient(var(--buttonGradient));
-    border: none;
-    margin: 0;
     position: absolute;
     z-index: 2;
     transform: translateX(-70%);
+    height: 5vh;
+    width: 7vh;
+    margin: 0;
+    background: linear-gradient(var(--buttonGradient));
+    border: none;
     border-radius: 25rem;
     box-shadow: 0 0.5rem 0.7rem 0.2rem var(--buttonShadow);
     cursor: pointer;
-    height: 5vh;
-    width: 7vh;
+    
 }
 
 button:hover,
@@ -122,15 +123,15 @@ button:focus {
 
 footer{
     max-width: 100vw;
+    margin: 0;
     text-align: center;
     font-weight: 300;
     color: var(--neutralColor);
-    margin: 0;
 }
 
 footer a{
-    color: var(--primaryColour);
     font-weight: 400;
+    color: var(--primaryColour);
     text-decoration: none;
 }
 
@@ -160,15 +161,15 @@ footer a{
 
     .text{
         order: 3;
+        width: 100%;
         margin: 0;
         padding: 0; 
-        width: 100%;
         text-align: center;
     }
 
     h1, h2{
-        font-size: 11vw;
         margin: 0;
+        font-size: 11vw;
     }
 
     h1{
@@ -201,18 +202,12 @@ footer a{
 }
 
 @media only screen and (orientation:landscape) {
-
-    .body{
-        min-height: 100vh;
-        background: linear-gradient(var(--backgroundGradient));
-    }   
-
     .container{
-        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(10, 10%);
         grid-template-rows: repeat(10);
         gap:0;
+        max-width: 100%;
         background: linear-gradient(var(--backgroundGradient));
     }
 
