@@ -1,9 +1,9 @@
 function validation()
 {
-var form = document.getElementById("form");
-var email = document.getElementById("email").value;
-var alert = document.getElementById("alert");
-var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const form = document.getElementById("form");
+const email = document.getElementById("email").value;
+const alert = document.getElementById("alert");
+const pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 if(email.match(pattern))
 {

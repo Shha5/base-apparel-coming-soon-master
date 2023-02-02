@@ -3,17 +3,17 @@
 }
 
 :root{
-    --primaryColour: hsl(0, 36%, 70%);
-    --backgroundPink: hsl(0, 100%, 98%);
-    --buttonShadow: rgba(243, 184, 184, 0.438);
-    --softRed: hsl(0, 93%, 68%);
-    --neutralColor: hsl(0, 6%, 24%);
-    --backgroundGradient: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
-    --buttonGradient: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+    --primary-color: hsl(0, 36%, 70%);
+    --background-pink: hsl(0, 100%, 98%);
+    --button-shadow: rgba(243, 184, 184, 0.438);
+    --alert-color: hsl(0, 93%, 68%);
+    --neutral-color: hsl(0, 6%, 24%);
+    --background-gradient: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --button-gradient: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
 }
 
 body{
-    background: linear-gradient(var(--backgroundGradient)); 
+    background: linear-gradient(var(--background-gradient)); 
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -40,12 +40,12 @@ h1, h2{
 
 h1{
     font-weight: 300;
-    color: var(--primaryColour);
+    color: var(--primary-color);
 }
 
 h2{
     font-weight: 600;
-    color: var(--neutralColor);
+    color: var(--neutral-color);
 }
 
 .text p{
@@ -53,7 +53,7 @@ h2{
     font-size: 3.70vw;
     line-height: 1.5em;
     letter-spacing: 0.02em;
-    color: var(--primaryColour);
+    color: var(--primary-color);
 }
 
 form{
@@ -73,10 +73,10 @@ input{
     padding: 1.2rem;
     background-color: transparent;
     border-radius: 25rem;
-    border: 1px solid var(--primaryColour);
+    border: 1px solid var(--primary-color);
     font-family: "Josefin Sans", Verdana;
     font-weight: 400;
-    color: var(--neutralColor);
+    color: var(--neutral-color);
 }
 
 input:focus{
@@ -84,13 +84,13 @@ input:focus{
 }
 
 input:invalid{
-    border: var(--softRed) solid 2px;
+    border: var(--alert-color) solid 2px;
 }
 
 ::placeholder{
     font-family: "Josefin Sans";
     font-weight: 400;
-    color: var(--primaryColour);
+    color: var(--primary-color);
     opacity: 0.5;
 }
 
@@ -99,10 +99,10 @@ button{
     z-index: 2;
     transform: translateX(-90%);
     margin: 0;
-    background: linear-gradient(var(--buttonGradient));
+    background: linear-gradient(var(--button-gradient));
     border: none;
     border-radius: 25rem;
-    box-shadow: 0 0.5rem 0.7rem 0.2rem var(--buttonShadow);
+    box-shadow: 0 0.5rem 0.7rem 0.2rem var(--button-shadow);
     cursor: pointer;
     
 }
@@ -115,7 +115,7 @@ button:focus {
 #alert{
     display: block;
     font-weight: 400;
-    color: var(--softRed)
+    color: var(--alert-color)
 }
 
 footer{
@@ -123,12 +123,12 @@ footer{
     margin: 0;
     text-align: center;
     font-weight: 300;
-    color: var(--neutralColor);
+    color: var(--neutral-color);
 }
 
 footer a{
     font-weight: 400;
-    color: var(--primaryColour);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -179,11 +179,11 @@ footer a{
     }
 
     form{
-        margin: 2rem auto 7rem auto;
+        margin: 2rem auto 1rem auto;
     } 
 
     input{
-        height: 5vh;
+        height: 40px;
     }
 
     ::placeholder{
@@ -191,14 +191,15 @@ footer a{
     }
 
     button{
-        width: 6em;
-        height: 3.15em;
+        width: 80px;
+        height: 41px;
     }
 
     #alert{
-        position: absolute;
-        transform: translate(15vw, -12vh);
-        font-size: 2.5vw;
+        text-align: left;
+        margin: 0 0 7rem 5em;
+        padding: 0;
+        font-size: 2.5vmin;
     }
 
     footer {
@@ -214,7 +215,7 @@ footer a{
         grid-template-rows: repeat(10);
         gap:0;
         max-width: 100%;
-        background: linear-gradient(var(--backgroundGradient));
+        background: linear-gradient(var(--background-gradient));
     }
 
     .bg{
@@ -256,7 +257,7 @@ footer a{
     }
 
     .photo{
-        background-color: var(--backgroundPink);
+        background-color: var(--background-pink);
         grid-row: 1/11;
         grid-column: 7/11; 
         height: 100vh;
@@ -272,7 +273,7 @@ footer a{
 
     input{
         min-width: 80%;
-        height: 6vh;
+        height: 50px;
     }
 
     ::placeholder{
@@ -280,8 +281,8 @@ footer a{
     }
 
     button{
-        height: 6vh;
-        width: 7.4rem;
+        height: 50px;
+        width: 80px;
     }
     
     #alert {
